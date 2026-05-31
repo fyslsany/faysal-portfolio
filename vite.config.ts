@@ -4,9 +4,8 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // IMPORTANT: This must match your GitHub repository name exactly.
-  // Currently set to 'fysl-sany-portfolio'.
-  base: '/fysl-sany-portfolio/',
+  // Deployed on Netlify (root domain), not GitHub Pages
+  base: '/',
   build: {
     outDir: 'dist',
     sourcemap: false,
